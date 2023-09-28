@@ -1,0 +1,68 @@
+/* Define a base style for the FAQ section */
+.section {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .faq-item {
+    margin: 20px;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Media Query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 10px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .faq-item {
+      margin: 10px;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* Media Query for screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 5px;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    .faq-item {
+      margin: 5px;
+
+      h3 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

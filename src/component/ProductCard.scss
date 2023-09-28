@@ -1,0 +1,137 @@
+/* Global styles */
+
+$primary-color: #007bff;
+$secondary-color: #333;
+$font-family: Arial, sans-serif;
+
+.productCard {
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Section styles */
+.section {
+  padding: 20px;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  /* Feature styles */
+  .feature {
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+  }
+
+  /* Pricing plan styles */
+  .pricing-plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $primary-color;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 1rem;
+        color: $secondary-color;
+        margin-bottom: 10px;
+      }
+    }
+
+    button {
+      background-color: $primary-color;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    /* Adjust the layout for medium-sized screens (tablets) */
+    .pricing-plan {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      width: 50%;
+      margin: 0 auto;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        li {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+      }
+
+      button {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    /* Adjust the layout for large screens (desktops) */
+    .card-price {
+      display: flex;
+    }
+    .section {
+      display: flex;
+      justify-content: space-between;
+
+      .feature {
+        width: calc(50% - 20px); /* Adjust the spacing as needed */
+      }
+
+      .pricing-plan {
+        width: calc(50% - 20px); /* Adjust the spacing as needed */
+      }
+    }
+  }
+}
